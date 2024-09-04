@@ -265,14 +265,21 @@ function displayOptionsWithIcons(options, selectorId, type) {
     defaultOption.textContent = type === 'processor' ? 'Seleccionar procesador' : 'Seleccionar placa base';
     selectElement.appendChild(defaultOption);
 
-    // Añadir las opciones con iconos
+    // Añadir las opciones
     options.forEach(option => {
         const optionElement = document.createElement('option');
         optionElement.value = option.id;
         optionElement.textContent = option.name;
-        optionElement.className = `icon-${option.manufacturer}`;
-
         selectElement.appendChild(optionElement);
+    });
+
+    // Escuchar el cambio en el select para cambiar el icono
+    selectElement.addEventListener('change', function() {
+        const selectedOption = options.find(option => option.id === selectElement.value);
+        selectElement.classList.remove('icon-intel', 'icon-amd');
+        if (selectedOption) {
+            selectElement.classList.add(`icon-${selectedOption.manufacturer}`);
+        }
     });
 }
 

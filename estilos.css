@@ -101,9 +101,13 @@ p {
 }
 
 select {
+    width: 100%;
     padding-left: 40px; /* Espacio para el icono */
     background-repeat: no-repeat;
     background-position: 10px center;
+    background-size: 20px;
+    height: 55px;
+    font-size: 16px;
 }
 
 .icon-intel {
