@@ -98,27 +98,15 @@ const motherboards = [
     { id: 'asus_b250', name: 'ASUS B250' },
     { id: 'gigabyte_b250', name: 'Gigabyte B250' },
     { id: 'msi_b250', name: 'MSI B250' },
-    { id: 'asus_b360', name: 'ASUS B360' },
-    { id: 'gigabyte_b360', name: 'Gigabyte B360' },
-    { id: 'msi_b360', name: 'MSI B360' },
     { id: 'gigabyte_b365', name: 'Gigabyte B365' },
     { id: 'asus_b365', name: 'ASUS B365' },
     { id: 'msi_b365', name: 'MSI B365' },
-    { id: 'asus_h310', name: 'ASUS H310' },
-    { id: 'gigabyte_h310', name: 'Gigabyte H310' },
-    { id: 'msi_h310', name: 'MSI H310' },
     { id: 'asus_h410', name: 'ASUS H410' },
     { id: 'gigabyte_h410', name: 'Gigabyte H410' },
     { id: 'msi_h410', name: 'MSI H410' },
-    { id: 'asus_h470', name: 'ASUS H470' },
-    { id: 'gigabyte_h470', name: 'Gigabyte H470' },
-    { id: 'msi_h470', name: 'MSI H470' },
     { id: 'asus_b550', name: 'ASUS B550' },
     { id: 'gigabyte_b550', name: 'Gigabyte B550' },
     { id: 'msi_b550', name: 'MSI B550' },
-    { id: 'asus_b560', name: 'ASUS B560' },
-    { id: 'gigabyte_b560', name: 'Gigabyte B560' },
-    { id: 'msi_b560', name: 'MSI B560' },
     { id: 'asus_x570', name: 'ASUS X570' },
     { id: 'gigabyte_x570', name: 'Gigabyte X570' },
     { id: 'msi_x570', name: 'MSI X570' },
@@ -127,25 +115,81 @@ const motherboards = [
     { id: 'asus_z270', name: 'ASUS Z270' },
     { id: 'gigabyte_z370', name: 'Gigabyte Z370' },
     { id: 'asus_z370', name: 'ASUS Z370' },
-    { id: 'gigabyte_z390', name: 'Gigabyte Z390' },
-    { id: 'asus_z390', name: 'ASUS Z390' },
-    { id: 'gigabyte_z490', name: 'Gigabyte Z490' },
-    { id: 'asus_z490', name: 'ASUS Z490' },
-    { id: 'asus_z590', name: 'ASUS Z590' },
-    { id: 'gigabyte_z590', name: 'Gigabyte Z590' },
-    { id: 'msi_z590', name: 'MSI Z590' },
-    { id: 'asus_z690', name: 'ASUS Z690' },
-    { id: 'gigabyte_z690', name: 'Gigabyte Z690' },
-    { id: 'msi_z690', name: 'MSI Z690' },
-    { id: 'asus_z790', name: 'ASUS Z790' },
-    { id: 'gigabyte_z790', name: 'Gigabyte Z790' },
-    { id: 'msi_z790', name: 'MSI Z790' },
     { id: 'asus_tuf', name: 'ASUS TUF' }, // Para procesadores H
     { id: 'gigabyte_aero', name: 'Gigabyte Aero' }, // Para procesadores H
     { id: 'msi_ge', name: 'MSI GE' }, // Para procesadores H
     { id: 'asus_zenbook', name: 'ASUS Zenbook' }, // Para procesadores U
     { id: 'gigabyte_p34', name: 'Gigabyte P34' }, // Para procesadores U
     { id: 'msi_p65', name: 'MSI P65' }, // Para procesadores U
+
+        // Placas base Intel
+        { id: 'asus_h310', name: 'ASUS H310', manufacturer: 'intel' },
+        { id: 'gigabyte_h310', name: 'Gigabyte H310', manufacturer: 'intel' },
+        { id: 'msi_h310', name: 'MSI H310', manufacturer: 'intel' },
+        { id: 'asus_b360', name: 'ASUS B360', manufacturer: 'intel' },
+        { id: 'gigabyte_b360', name: 'Gigabyte B360', manufacturer: 'intel' },
+        { id: 'msi_b360', name: 'MSI B360', manufacturer: 'intel' },
+        { id: 'asus_b460', name: 'ASUS B460', manufacturer: 'intel' },
+        { id: 'gigabyte_b460', name: 'Gigabyte B460', manufacturer: 'intel' },
+        { id: 'msi_b460', name: 'MSI B460', manufacturer: 'intel' },
+        { id: 'asus_b560', name: 'ASUS B560', manufacturer: 'intel' },
+        { id: 'gigabyte_b560', name: 'Gigabyte B560', manufacturer: 'intel' },
+        { id: 'msi_b560', name: 'MSI B560', manufacturer: 'intel' },
+        { id: 'asus_h370', name: 'ASUS H370', manufacturer: 'intel' },
+        { id: 'gigabyte_h370', name: 'Gigabyte H370', manufacturer: 'intel' },
+        { id: 'msi_h370', name: 'MSI H370', manufacturer: 'intel' },
+        { id: 'asus_h470', name: 'ASUS H470', manufacturer: 'intel' },
+        { id: 'gigabyte_h470', name: 'Gigabyte H470', manufacturer: 'intel' },
+        { id: 'msi_h470', name: 'MSI H470', manufacturer: 'intel' },
+        { id: 'asus_z390', name: 'ASUS Z390', manufacturer: 'intel' },
+        { id: 'gigabyte_z390', name: 'Gigabyte Z390', manufacturer: 'intel' },
+        { id: 'msi_z390', name: 'MSI Z390', manufacturer: 'intel' },
+        { id: 'asus_z490', name: 'ASUS Z490', manufacturer: 'intel' },
+        { id: 'gigabyte_z490', name: 'Gigabyte Z490', manufacturer: 'intel' },
+        { id: 'msi_z490', name: 'MSI Z490', manufacturer: 'intel' },
+        { id: 'asus_z590', name: 'ASUS Z590', manufacturer: 'intel' },
+        { id: 'gigabyte_z590', name: 'Gigabyte Z590', manufacturer: 'intel' },
+        { id: 'msi_z590', name: 'MSI Z590', manufacturer: 'intel' },
+        { id: 'asus_z690', name: 'ASUS Z690', manufacturer: 'intel' },
+        { id: 'gigabyte_z690', name: 'Gigabyte Z690', manufacturer: 'intel' },
+        { id: 'msi_z690', name: 'MSI Z690', manufacturer: 'intel' },
+        { id: 'asus_z790', name: 'ASUS Z790', manufacturer: 'intel' },
+        { id: 'gigabyte_z790', name: 'Gigabyte Z790', manufacturer: 'intel' },
+        { id: 'msi_z790', name: 'MSI Z790', manufacturer: 'intel' },
+        { id: 'asus_h510', name: 'ASUS H510', manufacturer: 'intel' },
+        { id: 'gigabyte_h510', name: 'Gigabyte H510', manufacturer: 'intel' },
+        { id: 'msi_h510', name: 'MSI H510', manufacturer: 'intel' },
+    
+        // Placas base AMD
+        { id: 'asus_b450', name: 'ASUS B450', manufacturer: 'amd' },
+        { id: 'gigabyte_b450', name: 'Gigabyte B450', manufacturer: 'amd' },
+        { id: 'msi_b450', name: 'MSI B450', manufacturer: 'amd' },
+        { id: 'asus_b550', name: 'ASUS B550', manufacturer: 'amd' },
+        { id: 'gigabyte_b550', name: 'Gigabyte B550', manufacturer: 'amd' },
+        { id: 'msi_b550', name: 'MSI B550', manufacturer: 'amd' },
+        { id: 'asus_a320', name: 'ASUS A320', manufacturer: 'amd' },
+        { id: 'gigabyte_a320', name: 'Gigabyte A320', manufacturer: 'amd' },
+        { id: 'msi_a320', name: 'MSI A320', manufacturer: 'amd' },
+        { id: 'asus_a520', name: 'ASUS A520', manufacturer: 'amd' },
+        { id: 'gigabyte_a520', name: 'Gigabyte A520', manufacturer: 'amd' },
+        { id: 'msi_a520', name: 'MSI A520', manufacturer: 'amd' },
+        { id: 'asus_x370', name: 'ASUS X370', manufacturer: 'amd' },
+        { id: 'gigabyte_x370', name: 'Gigabyte X370', manufacturer: 'amd' },
+        { id: 'msi_x370', name: 'MSI X370', manufacturer: 'amd' },
+        { id: 'asus_x470', name: 'ASUS X470', manufacturer: 'amd' },
+        { id: 'gigabyte_x470', name: 'Gigabyte X470', manufacturer: 'amd' },
+        { id: 'msi_x470', name: 'MSI X470', manufacturer: 'amd' },
+        { id: 'asus_x570', name: 'ASUS X570', manufacturer: 'amd' },
+        { id: 'gigabyte_x570', name: 'Gigabyte X570', manufacturer: 'amd' },
+        { id: 'msi_x570', name: 'MSI X570', manufacturer: 'amd' },
+        { id: 'asus_x670', name: 'ASUS X670', manufacturer: 'amd' },
+        { id: 'gigabyte_x670', name: 'Gigabyte X670', manufacturer: 'amd' },
+        { id: 'msi_x670', name: 'MSI X670', manufacturer: 'amd' },
+        { id: 'asus_b650', name: 'ASUS B650', manufacturer: 'amd' },
+        { id: 'gigabyte_b650', name: 'Gigabyte B650', manufacturer: 'amd' },
+        { id: 'msi_b650', name: 'MSI B650', manufacturer: 'amd' },
+    
+    
     
     // Agregar más placas base según sea necesario
 ];
@@ -286,3 +330,50 @@ function displayOptionsWithIcons(options, selectorId, type) {
 // Ejemplo de uso
 displayOptionsWithIcons(processors, 'processorSelect', 'processor');
 displayOptionsWithIcons(motherboards, 'motherboardSelect', 'motherboard');
+
+// Ordenar las placas base por el nombre del fabricante y luego por el nombre del modelo
+motherboards.sort((a, b) => {
+    if (a.manufacturer < b.manufacturer) return -1;
+    if (a.manufacturer > b.manufacturer) return 1;
+    return a.name.localeCompare(b.name);
+});
+
+function displayOptionsWithIcons(options, selectorId, type) {
+    const selectElement = document.getElementById(selectorId);
+    selectElement.innerHTML = ''; // Limpiar opciones anteriores
+
+    // Añadir opción predeterminada
+    const defaultOption = document.createElement('option');
+    defaultOption.value = '';
+    defaultOption.textContent = type === 'processor' ? 'Seleccionar procesador' : 'Seleccionar placa base';
+    selectElement.appendChild(defaultOption);
+
+    // Añadir las opciones ordenadas
+    options.forEach(option => {
+        const optionElement = document.createElement('option');
+        optionElement.value = option.id;
+        optionElement.textContent = option.name;
+        selectElement.appendChild(optionElement);
+    });
+
+    // Escuchar el cambio en el select para cambiar el icono
+    selectElement.addEventListener('change', function() {
+        const selectedOption = options.find(option => option.id === selectElement.value);
+        selectElement.classList.remove('icon-intel', 'icon-amd');
+        if (selectedOption) {
+            selectElement.classList.add(`icon-${selectedOption.manufacturer}`);
+        }
+    });
+}
+
+// Ejemplo de uso
+displayOptionsWithIcons(processors, 'processorSelect', 'processor');
+
+// Ordenar las placas base antes de mostrarlas
+motherboards.sort((a, b) => {
+    if (a.manufacturer < b.manufacturer) return -1;
+    if (a.manufacturer > b.manufacturer) return 1;
+    return a.name.localeCompare(b.name);
+});
+displayOptionsWithIcons(motherboards, 'motherboardSelect', 'motherboard');
+
